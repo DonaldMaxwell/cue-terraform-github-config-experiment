@@ -154,7 +154,7 @@ github: actions: {
 				},
 				step.#NotifyEmail & {
 					if: "${{ always() }}"
-					#To: [donald.c.maxwell@gmail.com]
+					#To: ["donald.c.maxwell@gmail.com"]
 					#Subject: "Infrastructure drift detected"
 					#Message: "\(#Subject): \(workflow_link)"
 				},
@@ -177,7 +177,7 @@ github: actions: {
 				},
 				step.#NotifyEmail & {
 					if: "${{ always() }}"
-					#To: [donald.c.maxwell@gmail.com]
+					#To: ["donald.c.maxwell@gmail.com"]
 					#Subject: "CI failure on infra repo `main` branch"
 					#Message: "Failed CI workflow: \(workflow_link)"
 				},

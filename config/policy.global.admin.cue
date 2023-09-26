@@ -39,7 +39,7 @@ github: org: [orgName=_]: config: terraform.#Config & {
 		}
 
 		github_organization_settings: self: {
-			billing_email: donald.c.maxwell@gmail.com
+			billing_email: "donald.c.maxwell@gmail.com"
 		}
 
 		github_membership: {
