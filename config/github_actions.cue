@@ -154,7 +154,7 @@ github: actions: {
 				},
 				step.#NotifyEmail & {
 					if: "${{ always() }}"
-					#To: [FIXME_NOTIFICATIONS_EMAIL]
+					#To: [donald.c.maxwell@gmail.com]
 					#Subject: "Infrastructure drift detected"
 					#Message: "\(#Subject): \(workflow_link)"
 				},
@@ -177,7 +177,7 @@ github: actions: {
 				},
 				step.#NotifyEmail & {
 					if: "${{ always() }}"
-					#To: [FIXME_NOTIFICATIONS_EMAIL]
+					#To: [donald.c.maxwell@gmail.com]
 					#Subject: "CI failure on infra repo `main` branch"
 					#Message: "Failed CI workflow: \(workflow_link)"
 				},
@@ -433,7 +433,7 @@ github: actions: {
 				  --no-progress-meter \\
 				  -d content="\(#Message)" \\
 				  -d username="Github Actions" \\
-				  "https://discord.com/api/webhooks/FIXME_DISCORD_WEBHOOK_ID/${{ secrets.DISCORD_WEBHOOK_TOKEN }}"
+				  "https://discord.com/api/webhooks/1156268691936260147/${{ secrets.DISCORD_WEBHOOK_TOKEN }}"
 				"""
 		}
 
