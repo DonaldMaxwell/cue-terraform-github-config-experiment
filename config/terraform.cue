@@ -16,7 +16,7 @@ github: {
 		}
 		terraform: github.terraform & {
 			cloud: {
-				organization: "org-G9JeWE9LNoRLQ7yG"
+				organization: "cue_tf"
 				workspaces: tags: ["service:github", "org:\(orgName)"]
 			}
 		}

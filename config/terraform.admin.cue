@@ -10,7 +10,7 @@ github: org: [orgName=_]: config: {
 		owner!: orgName
 	}
 	terraform: cloud: {
-		organization!: "org-G9JeWE9LNoRLQ7yG"
+		organization!: "cue_tf"
 		workspaces: tags!: ["service:github", "org:\(orgName)"]
 	}
 }
